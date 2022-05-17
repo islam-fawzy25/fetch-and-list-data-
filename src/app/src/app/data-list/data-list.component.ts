@@ -13,8 +13,12 @@ export class DataListComponent implements OnInit {
   constructor(private dataServices: DataServices) { }
 
   ngOnInit() {
+
     this.dataServices.getData()
-    .subscribe(data => this.todos = data)
+    .subscribe(data => {
+      console.log(data);
+
+      this.todos = data})
   }
 
 }

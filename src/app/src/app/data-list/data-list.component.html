@@ -2,5 +2,8 @@
 
 <h2>Employee List</h2>
 <ul *ngFor="let todo of todos">
-  <li>{{todo.title}}</li>
+  <div>
+    <img src={{todo.thumbnailUrl}}/>
+    <li>{{todo.title}}</li>
+  </div>
 </ul>
